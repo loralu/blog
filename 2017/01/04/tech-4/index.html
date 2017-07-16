@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="null">
+    <link rel="shortcut icon" href="/blog/img/favicon.ico">
+
+    <title>LoraLU
+    </title>
+
+    <link rel="canonical" href="http://loraLu.github.io/blog/blog/2017/01/04/tech-4/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/blog/css/bootstrap.min.css">
+    
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/blog/css/blog-1.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/blog/css/syntax.css">
+
+    <!-- Custom Fonts -->
+     <link rel="stylesheet" href="/blog/css/font-awesome.min.css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+     <div class="row">
+            <div class="col-lg-3 col-md-3"> 
+                <div class="nav-left">
+                    <div class="logo">
+                        <a href="https://loralu.github.io">LORA LU</a>
+                    </div>
+                    <div class="nav-1">
+                          <ul class="nav nav-pills nav-stacked">
+                             <li ><a href="https://loralu.github.io/portraiture/">Portraiture</a></li>
+                             <li><a href="https://loralu.github.io/scenery/">Human/Nature</a></li>
+                          </ul>
+                    </div>
+                    <div class="nav-2">
+                          <ul class="nav nav-pills nav-stacked">
+                             <li class="active"><a href="https://loralu.github.io/blog/">Blog</a></li>
+                             <li><a href="https://loralu.github.io/about/">About me</a></li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Main Content -->
+    
+
+
+
+
+<!-- Post Content -->
+
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-6 col-lg-offset-0
+                col-md-6 col-md-offset-0
+                post-container">
+                <div class="article-info">
+                    <div class="page-title">
+                        CSS3动画－－animation、transition、transform 
+                    </div>
+                    <div class="page-date">
+                           <i class="fa fa-calendar"></i>
+                          January 4th 2017
+                    </div>
+                    <div class="tags">
+                            <i class="fa fa-tag"></i>
+                            
+                                <a class="tag" href="/blog/tags/#笔记" title="笔记">笔记</a>
+                            
+                                <a class="tag" href="/blog/tags/#技术" title="技术">技术</a>
+                            
+                                <a class="tag" href="/blog/tags/#前端" title="前端">前端</a>
+                            
+                    </div>
+                </div>
+                <div class="article-content">
+                <h4 id="一、定义动画过程中形成的状态用transform"><a href="#一、定义动画过程中形成的状态用transform" class="headerlink" title="一、定义动画过程中形成的状态用transform"></a>一、定义动画过程中形成的状态用transform</h4><p>transform 分为2D 和 3D，主要包含以下几种变换：旋转rotate、扭曲skew、缩放scale和移动  translate以及矩阵变形matrix，语法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">transform: rotate | scale | skew | translate |matrix;</div></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>旋转</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rotate(angle)</td>
+<td>定义 2D 旋转，在参数中规定角度</td>
+</tr>
+<tr>
+<td>rotate3d(x,y,z,angle)</td>
+<td>定义 3D 旋转</td>
+</tr>
+<tr>
+<td>rotateX(angle)</td>
+<td>定义沿着 X 轴的 3D 旋转</td>
+</tr>
+<tr>
+<td>rotateY(angle)</td>
+<td>定义沿着 Y 轴的 3D 旋转</td>
+</tr>
+<tr>
+<td>rotateZ(angle)</td>
+<td>定义沿着 Z 轴的 3D 旋转</td>
+</tr>
+</tbody>
+</table>
+<p>rotate 的单位是deg 度，正数表示顺时针旋转，负数表示逆时针旋转。</p>
+<table>
+<thead>
+<tr>
+<th>缩放</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scale(x,y)</td>
+<td>定义 2D 缩放转换</td>
+</tr>
+<tr>
+<td>scale3d(x,y,z)</td>
+<td>定义 3D 缩放转换</td>
+</tr>
+<tr>
+<td>scaleX(x)</td>
+<td>通过设置 X 轴的值来定义缩放转换</td>
+</tr>
+<tr>
+<td>scaleY(y)</td>
+<td>通过设置 Y 轴的值来定义缩放转换</td>
+</tr>
+<tr>
+<td>scaleZ(z)</td>
+<td>通过设置 Z 轴的值来定义 3D 缩放转换</td>
+</tr>
+</tbody>
+</table>
+<p>scale 的取值范围是0~n，小于1时表示缩小，反之表示放大。例如scale(0.5, 2)表示水平方向缩小1倍，垂直方向放大1倍， 另外，也可以通过scaleX或者scaleY对一个方向进行设置。</p>
+<table>
+<thead>
+<tr>
+<th>扭曲</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>skew(x-angle,y-angle)</td>
+<td>定义沿着 X 和 Y 轴的 2D 倾斜转换</td>
+</tr>
+<tr>
+<td>skewX(angle)</td>
+<td>定义沿着 X 轴的 2D 倾斜转换</td>
+</tr>
+<tr>
+<td>skewY(angle)</td>
+<td>定义沿着 Y 轴的 2D 倾斜转换</td>
+</tr>
+</tbody>
+</table>
+<p>skew 的单位跟rotate一样都是deg 度。例如 skew(30deg, 10deg)表示水平方向倾斜30度，垂直方向倾斜10度。</p>
+<table>
+<thead>
+<tr>
+<th>偏移</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>translate(x,y)</td>
+<td>定义 2D 转换</td>
+</tr>
+<tr>
+<td>translate3d(x,y,z)</td>
+<td>定义 3D 转换</td>
+</tr>
+<tr>
+<td>translateX(x)</td>
+<td>定义转换，只是用 X 轴的值</td>
+</tr>
+<tr>
+<td>translateY(y)</td>
+<td>定义转换，只是用 Y 轴的值</td>
+</tr>
+<tr>
+<td>translateZ(z)</td>
+<td>定义 3D 转换，只是用 Z 轴的值</td>
+</tr>
+</tbody>
+</table>
+<p>偏移同样包括水平偏移和垂直偏移。translate(x,y)水平方向和垂直方向同时移动（也就是X轴和Y轴同时移动）；translateX(x)仅水平方向移动（X轴移动）；translateY(Y)仅垂直方向移动（Y轴移动）。</p>
+<h3 id="二、定义动画过程用animation或者transition"><a href="#二、定义动画过程用animation或者transition" class="headerlink" title="二、定义动画过程用animation或者transition"></a>二、定义动画过程用animation或者transition</h3><p><strong>transition</strong></p>
+<p>transition允许css的属性值在一定的时间区间内平滑地过渡，语法如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">transition ： transition-property transition-duration transition-timing-function transition-delay [, ...]</div></pre></td></tr></table></figure></p>
+<ul>
+<li>transition-property :用来指定执行transition效果的属性，可以为 none,all或者特定的属性</li>
+<li>transition-duration: 动画执行的持续时间，单位为s（秒）或者 ms（毫秒）</li>
+<li>transition-timing-function:变换速率效果，可选值为ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier（自定义时间曲线）</li>
+<li>transition-delay:用来指定动画开始执行的时间，取值同transition-duration，但是可以为负数</li>
+</ul>
+<p><strong>animation</strong></p>
+<p>CSS3 中的 animation 是通过一个叫Keyframes关键帧的玩意来控制的，他的命名是由”@keyframes”开头，后面紧接着是这个“动画的名称”加上一对花括号“{}”，括号中就是一些不同时间段样式规则，有点像我们css的样式写法一样。对于一个”@keyframes”中的样式规则是由多个百分比构成的，如“0%”到”100%”之间，语法如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">@keyframes IDENT &#123;</div><div class="line">  from &#123;</div><div class="line">    Properties: Properties value;</div><div class="line">  &#125;</div><div class="line">  Percentage &#123;</div><div class="line">    Properties: Properties value;</div><div class="line">  &#125;</div><div class="line">  to &#123;</div><div class="line">    Properties: Properties value;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>或者全部写成百分比的形式：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">@keyframes IDENT &#123;</div><div class="line">  0% &#123;</div><div class="line">    Properties: Properties value;</div><div class="line">  &#125;</div><div class="line">  Percentage &#123;</div><div class="line">    Properties: Properties value;</div><div class="line">  &#125;</div><div class="line">  100% &#123;</div><div class="line">    Properties: Properties value;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>animation和transition一样有自己相对应的属性，在animation主要有以下几种：</p>
+<ul>
+<li><p>animation-iteration-count : 动画循环次数,默认为1，如果要进行无限循环，只要设为infinite即可</p>
+</li>
+<li><p>animation-direction : 动画播放的方向,其只有两个值，默认值为normal，如果设置为normal时，动画的每次循环都是向前播放；另一个值是alternate，他的作用是，动画播放在第偶数次向前播放，第奇数次向反方向播放</p>
+</li>
+<li><p>animation-play-state : 播放状态。其主要有两个值，running和paused，其中running为默认值。可以通过paused将正在播放的动画停下了，也可以通过running将暂停的动画重新播放。这个属性不常用。</p>
+</li>
+</ul>
+<h3 id="三、Demo"><a href="#三、Demo" class="headerlink" title="三、Demo"></a>三、Demo</h3><p><strong>1.让图片不停旋转</strong></p>
+<p>HTML<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;body&gt;</div><div class="line">    &lt;img src=&quot;img/ring.png&quot;&gt;</div><div class="line">&lt;/body&gt;</div></pre></td></tr></table></figure></p>
+<p>CSS<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">&lt;style type=&quot;text/css&quot;&gt;</div><div class="line">    @keyframes rotateInfinite&#123;</div><div class="line">        from&#123;</div><div class="line">            -webkit-transform: rotate(0deg);</div><div class="line">            transform: rotate(0deg);</div><div class="line">        &#125;</div><div class="line">        to&#123;</div><div class="line">            -webkit-transform: rotate(360deg);</div><div class="line">            transform: rotate(360deg);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    @-webkit-keyframes rotateInfinite&#123;</div><div class="line">        from&#123;</div><div class="line">            -webkit-transform: rotate(0deg);</div><div class="line">            transform: rotate(0deg);</div><div class="line">        &#125;</div><div class="line">        to&#123;</div><div class="line">            -webkit-transform: rotate(360deg);</div><div class="line">            transform: rotate(360deg);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    img&#123;</div><div class="line">        animation: rotateInfinite 1s linear infinite;</div><div class="line">    &#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure></p>
+
+                </div>
+
+                <hr>
+                
+
+
+                <!-- 多说评论框 start -->
+                <div class="ds-thread" data-thread-key="2017/01/04/tech-4/" data-title="CSS3动画－－animation、transition、transform" data-url="http://loraLu.github.io/blog/2017/01/04/tech-4/"></div>
+                <!-- 多说评论框 end -->
+                <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+                <script type="text/javascript">
+                var duoshuoQuery = {short_name:"loralu"};
+                    (function() {
+                        var ds = document.createElement('script');
+                        ds.type = 'text/javascript';ds.async = true;
+                        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                        ds.charset = 'UTF-8';
+                        (document.getElementsByTagName('head')[0] 
+                         || document.getElementsByTagName('body')[0]).appendChild(ds);
+                    })();
+                    </script>
+                    <!-- 多说公共JS代码 end -->
+
+                
+
+               
+
+            </div>
+    
+
+    <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-3 col-lg-offset-0
+                col-md-3 col-md-offset-0
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                        
+                        <section>
+                            <!-- no hr -->
+                            <h5><a href="/blog/tags/"><i class="fa fa-tag"></i>Tags</a></h5>
+                            <div class="tags">
+                                
+                                   
+                                    <a href="/blog/tags/#摄影" title="摄影" rel="2">摄影</a>
+                                   
+                                
+                                   
+                                    <a href="/blog/tags/#笔记" title="笔记" rel="7">笔记</a>
+                                   
+                                
+                                   
+                                    <a href="/blog/tags/#技术" title="技术" rel="5">技术</a>
+                                   
+                                
+                                   
+                                    <a href="/blog/tags/#前端" title="前端" rel="5">前端</a>
+                                   
+                                
+                            </div>
+                        </section>
+                        
+
+              
+            </div>
+
+      
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                <p class="copyright text-muted">
+                    Copyright &copy; LaraLu 2017 
+                    <br>
+                     Powered by <a href="https://hexo.io/">Hexo</a>   
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/blog/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/blog/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/blog/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://loraLu.github.io/blog/blog/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- Side Catalog -->
+
+
+
+
+
+
+
+</body>
+
+</html>

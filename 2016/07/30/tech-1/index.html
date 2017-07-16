@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="null">
+    <link rel="shortcut icon" href="/blog/img/favicon.ico">
+
+    <title>LoraLU
+    </title>
+
+    <link rel="canonical" href="http://loraLu.github.io/blog/blog/2016/07/30/tech-1/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/blog/css/bootstrap.min.css">
+    
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/blog/css/blog-1.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/blog/css/syntax.css">
+
+    <!-- Custom Fonts -->
+     <link rel="stylesheet" href="/blog/css/font-awesome.min.css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+     <div class="row">
+            <div class="col-lg-3 col-md-3"> 
+                <div class="nav-left">
+                    <div class="logo">
+                        <a href="https://loralu.github.io">LORA LU</a>
+                    </div>
+                    <div class="nav-1">
+                          <ul class="nav nav-pills nav-stacked">
+                             <li ><a href="https://loralu.github.io/portraiture/">Portraiture</a></li>
+                             <li><a href="https://loralu.github.io/scenery/">Human/Nature</a></li>
+                          </ul>
+                    </div>
+                    <div class="nav-2">
+                          <ul class="nav nav-pills nav-stacked">
+                             <li class="active"><a href="https://loralu.github.io/blog/">Blog</a></li>
+                             <li><a href="https://loralu.github.io/about/">About me</a></li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Main Content -->
+    
+
+
+
+
+<!-- Post Content -->
+
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-6 col-lg-offset-0
+                col-md-6 col-md-offset-0
+                post-container">
+                <div class="article-info">
+                    <div class="page-title">
+                        建站·才刚刚开始 
+                    </div>
+                    <div class="page-date">
+                           <i class="fa fa-calendar"></i>
+                          July 30th 2016
+                    </div>
+                    <div class="tags">
+                            <i class="fa fa-tag"></i>
+                            
+                                <a class="tag" href="/blog/tags/#笔记" title="笔记">笔记</a>
+                            
+                                <a class="tag" href="/blog/tags/#技术" title="技术">技术</a>
+                            
+                                <a class="tag" href="/blog/tags/#前端" title="前端">前端</a>
+                            
+                    </div>
+                </div>
+                <div class="article-content">
+                <div><br><br>    <font color="gray" face="华文楷体">　　“医学、法律、商业、工程，这些都是崇高的追求，足以支撑人的一生，但诗、美丽、浪漫、爱情，这些才是我们活着的意义。”      ——《死亡诗社》</font><br><br>    <br><br></div>
+
+<p>　　自从学习前端以来就一直想着建一个个人网站，想在自己创造的乌托邦里记录心情、学习、生活。想通过技术上的努力，让我能在没有任何障碍的空间里感受美丽，享受浪漫，体会自由。更想找到真正所爱，找到一种快乐的生活方式，成为更好的人。</p>
+<p>　　跑题了吧。。。我怎么又矫情了。。。说好的技术贴呢。。。</p>
+<p>　　好了回归正题，建站的过程真的很痛苦，百度带我入了太多坑（谁叫我不早点用google），但最后也还是给了我一些正确的指引方向，在经过我还不算太笨的大脑的一番摸索、以及茶不思饭不想的抓狂之后，终于诞生了 Version 1.0 。对于我来说的几个关键步骤是一定要记录一下的，不然真的对不起我的黑眼圈。</p>
+<p>　　<strong>一、 如何在github-pages上搭建自己的页面</strong></p>
+<p>　　在本地编写好HTML、CSS、JS文件之后，得将文件部署到Github服务器上去，于是百度出github-pages这个工具，它可以帮助组搭建博客或者托管网页，且免费。下面就是我将我自己写好的网页部署到github-pages上的步骤：</p>
+<ol>
+<li><p>注册Github账号</p>
+</li>
+<li><p>下载安装git。下载地址<a href="https://git-scm.com/downloads" target="_blank" rel="external">https://git-scm.com/downloads</a></p>
+</li>
+<li><p>登陆到自己的Github账号，新建一个仓库（repository），如果这次部署上去的网页是网站的主页，那么仓库必须得命名为 loralu.github.io, loralu为我注册github时的用户名，</p>
+</li>
+<li><p>建完仓库之后，打开settings，有一个Github Pages 的设置，点击Launch automatic page generator（启动自动页面生成器）。</p>
+</li>
+<li><p>点击页面最后的continue to layouts，然后选择一个页面主题，再点击publish pages。这个时候就可以通过输入网址 loralu.github.io 进入到自己刚刚设置的页面中了。</p>
+</li>
+<li><p>将本地文件与github-pages同步。</p>
+</li>
+</ol>
+<p>　　本地选择一个盘（我选的D盘），右键空白处点击 git bush here，输入以下命令</p>
+<pre><code>git clone https://github.com/loralu/loralu.github.io.git
+</code></pre><p>　　回车，D盘就多了一个叫loralu.github.io的文件夹，这个就是和github上建的那个仓库中的内容是对应的。</p>
+<p>　　接下来就将自己之前写好的网页相关的所有文件复制到该文件夹中，然后依次输入几个命令：</p>
+<pre><code>git add -A
+git commit -m &quot;loralu.github.io&quot;
+git push
+</code></pre><p>　　完成之后就会发现本地文件已被同步到Github仓库中，现在打开loralu.github.io网址，显示的就是自己写的主页。</p>
+<p>　　<strong>二、 利用Hexo搭建博客页</strong></p>
+<p>　　除了主页loralu.github.io，还要建博客页，即loralu.github.io/blog 。这时就要为上一步建立的loralu.github.io仓库建立分支gh-pages。同样点击new repository，仓库名命名为blog ，接下来的操作和上面的步骤4、5相同。再在D盘输入一下命令：</p>
+<pre><code>git clone https://github.com/loralu/blog.git
+</code></pre><p>　　接着在blog文件夹中输入以下命令，为了在本地新建一个gh-pages分支，而这个分支是远程分支origin/gh-pages的镜像，也就是可以在本地的gh-pages看到github上的gh-pages的内容:</p>
+<pre><code>git checkout -b gh-pages origin/gh-pages
+</code></pre><p>　　这样本地的文件目录结构就弄好了，接下来就是利用Hexo框架编写博客页，关于Hexo的教程我参考的是：<a href="http://lupeng.me/categories/%E6%8A%80%E6%9C%AF/Hexo/" target="_blank" rel="external">LP’s Blog</a>,   从安装到高阶应用写的比较全面。</p>
+<p>　　<strong>三、 关于域名问题</strong></p>
+<p>　　网站分为六个页面：主页（loralu.github.io）、portraiture、scenery、blog、contact、about。我将整个网站分为两个项目发布到github上，一个是loralu.github.io项目，里面文件包括主页、portraiture、scenery、contact、about；另一个项目即blog，仅仅为博客页（因为刚接触hexo，对其文档还不太熟悉，还是更喜欢用html写网页）。博客页在分支gh-pages中，因此博客页地址栏显示loralu.github.io/blog。如何将其它四个页面的域名也这样显示，如contact页面显示loralu.github.io/contact。</p>
+<p>　　我的解决办法是，以about页面为例，在loralu.github.io文件夹中建一个名为about的文件夹，将about页面的html文件命名为index.html存入该文件夹中，并将其它页面链接到about页面的href写为：</p>
+<pre><code>&lt;a href=&quot;/about/&quot;&gt;about&lt;/a&gt;
+</code></pre><p>　　其它页面也是同样的方法。</p>
+<p>　　啦啦啦好啦，终于有个可以督促自己写字的地方了，刚刚建完，功能还比较简陋，太多好看的元素、很棒的功能目前就我的技术而言还实现不了，哭。。。。不过我相信所有人都有这样的阶段，后续我会不断学习，更新维护，慢慢打造成完美的形象，欢迎大家一起见证它的成长！</p>
+
+                </div>
+
+                <hr>
+                
+
+
+                <!-- 多说评论框 start -->
+                <div class="ds-thread" data-thread-key="2016/07/30/tech-1/" data-title="建站·才刚刚开始" data-url="http://loraLu.github.io/blog/2016/07/30/tech-1/"></div>
+                <!-- 多说评论框 end -->
+                <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+                <script type="text/javascript">
+                var duoshuoQuery = {short_name:"loralu"};
+                    (function() {
+                        var ds = document.createElement('script');
+                        ds.type = 'text/javascript';ds.async = true;
+                        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                        ds.charset = 'UTF-8';
+                        (document.getElementsByTagName('head')[0] 
+                         || document.getElementsByTagName('body')[0]).appendChild(ds);
+                    })();
+                    </script>
+                    <!-- 多说公共JS代码 end -->
+
+                
+
+               
+
+            </div>
+    
+
+    <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-3 col-lg-offset-0
+                col-md-3 col-md-offset-0
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                        
+                        <section>
+                            <!-- no hr -->
+                            <h5><a href="/blog/tags/"><i class="fa fa-tag"></i>Tags</a></h5>
+                            <div class="tags">
+                                
+                                   
+                                    <a href="/blog/tags/#摄影" title="摄影" rel="2">摄影</a>
+                                   
+                                
+                                   
+                                    <a href="/blog/tags/#笔记" title="笔记" rel="7">笔记</a>
+                                   
+                                
+                                   
+                                    <a href="/blog/tags/#技术" title="技术" rel="5">技术</a>
+                                   
+                                
+                                   
+                                    <a href="/blog/tags/#前端" title="前端" rel="5">前端</a>
+                                   
+                                
+                            </div>
+                        </section>
+                        
+
+              
+            </div>
+
+      
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                <p class="copyright text-muted">
+                    Copyright &copy; LaraLu 2017 
+                    <br>
+                     Powered by <a href="https://hexo.io/">Hexo</a>   
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/blog/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/blog/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/blog/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://loraLu.github.io/blog/blog/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- Side Catalog -->
+
+
+
+
+
+
+
+</body>
+
+</html>
